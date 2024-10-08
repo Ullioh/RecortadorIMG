@@ -3,8 +3,8 @@ from glob import glob
 from PIL import Image
 
 # ruta de la carpeta donde están las imágenes originales
-carpeta_origen = "C:/Users/Hidari/Downloads/images" #bucar en la pc
-carpeta_destino = "C:/Users/Hidari/Downloads/images/recortadas" #bucar en la pc y puedes poner el nombre que quieras dondes dice "recortadas"
+carpeta_origen = "D:/USUARIO 001/Nueva carpeta/images" #bucar en la pc
+carpeta_destino = "D:/USUARIO 001/Nueva carpeta/images/recortadas" #bucar en la pc y puedes poner el nombre que quieras dondes dice "recortadas"
 
 # se crea la carpeta de destino lo mas probable e sque no exisra
 if not os.path.exists(carpeta_destino):
@@ -14,7 +14,7 @@ if not os.path.exists(carpeta_destino):
 area_a_recortar = (100, 662, 1436, 1496)
 
 # busca todas las imagenes, si es un formato dufernete se deben cambiar.
-imagenes = glob(os.path.join(carpeta_origen, "*.png"))
+imagenes = glob(os.path.join(carpeta_origen, "*.png")) #.jpg, .png 
 
 for imagen_path in imagenes:
     # abre la imagen
